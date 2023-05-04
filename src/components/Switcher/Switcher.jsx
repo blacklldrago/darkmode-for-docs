@@ -17,10 +17,12 @@ function Switcher(){
         
         <div>
             <DarkModeSwitch
+                className="relative left-3"
                 checked = {darkSide}
                 onChange = {toggleDarkMode}
-                size = {100}                
+                size = {56}                
             />
+            <h3 className="text-gray-800 dark:text-gray-300 pt-4 text-center font-[600]">{colorTheme == 'light' ? 'Dark mode' : 'Light mode'}</h3>
         </div>
         </>
     )
